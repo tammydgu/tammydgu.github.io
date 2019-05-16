@@ -107,10 +107,9 @@ html, body {
   width: 100%;
   height: 55vh;
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+
+.nav-area * {
+  box-sizing:border-box;
 }
 .nav-area {
   position: absolute;
