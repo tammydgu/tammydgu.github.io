@@ -1,0 +1,206 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+@font-face {
+  font-family: NexaRegular;
+  src: url("Fonts/Nexa Regular.otf")
+}
+@font-face {
+  font-family: NexaLight;
+  src: url("Fonts/Nexa Light.otf")
+}
+.fullscreen-image {
+  display: table;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background: url("Images/macayres6.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.image-overlay a {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+.image-overlay {
+  padding: 50px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.section-body {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+.about-content {
+  padding: 50px;
+}
+.about-content img {
+  width: 30%;
+  height: 30%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.about-content h1 {
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.about-content p {
+  font-size: 18px;
+  padding-bottom: 15px;
+  line-height: 1.3em;
+}
+.collab-section {
+  padding-left: 50px;
+  float: left;
+  width: 50%;
+}
+.collab-section ul {
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.75em;
+}
+.collab-section h2 {
+  font-size: 40px;
+}
+.concert-section {
+  padding-left: 50px;
+  float:right;
+  width: 50%;
+}
+.concert-section ul {
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.75em;
+}
+.concert-section h2 {
+  font-size: 40px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav-area {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index:1;
+}
+
+.nav-area .hamburger-menu {
+  position:absolute;
+  top: 45px;
+  right: 48vw;
+  z-index:  2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+
+}
+.nav-area .nav-icon {
+  position: absolute;
+  top: 45px;
+  right: 48vw;
+  z-index:1;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  background: rgba(255,255,255,0.6);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.nav-area .nav-icon > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.nav-area .nav-icon > div:before, .nav-area .nav-icon > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+.nav-area .nav-icon > div:after {
+  top: 8px;
+}
+.nav-area .hamburger-menu:checked + .nav-icon > div {
+  transform: rotate(135deg);
+}
+.nav-area .hamburger-menu:checked + .nav-icon > div:before,
+.nav-area .hamburger-menu:checked + .nav-icon > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.nav-area .hamburger-menu:checked:hover + .nav-icon > div {
+  transform: rotate(225deg);
+}
+.nav-area .hamburger-menu:checked ~ .main-menu {
+  visibility: visible;
+}
+.nav-area .hamburger-menu:checked ~ .main-menu > div {
+  transform: scale(1);
+  transition-duration: 0.8s;
+}
+.nav-area .hamburger-menu:checked ~ .main-menu > div > div {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.nav-area .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+.nav-area .main-menu > div {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.5s ease;
+  background: rgba(0,0,0,0.9);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vh;
+}
+.nav-area .main-menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.nav-area .main-menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+}
+.nav-area .main-menu > div > div > ul > li > a{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}

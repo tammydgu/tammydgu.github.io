@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.load {
+  animation: slide 2s;
+}
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 15s infinite;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.heading a {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+.heading {
+  padding: 50px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@keyframes slide {
+  0% {
+    background-image: url('Images/macayres7.jpg');
+  }
+  20% {
+    background-image: url('Images/macayres7.jpg');
+  }
+  20.01% {
+    background-image: url('Images/macayres18.jpg');
+  }
+  40% {
+    background-image: url('Images/macayres18.jpg');
+  }
+  40.01% {
+    background-image: url('Images/macayres16.jpg');
+  }
+  60% {
+    background-image: url('Images/macayres16.jpg');
+  }
+  60.01% {
+    background-image: url('Images/Lightbox/macayresB.jpg');
+  }
+  80% {
+    background-image: url('Images/Lightbox/macayresB.jpg');
+  }
+  80.01% {
+    background-image: url('Images/macayres14.jpg');
+  }
+  100% {
+    background-image: url('Images/macayres14.jpg');
+  }
+}
+.media-body {
+  width: 100%;
+  height: 100vh;
+}
+.media-content {
+  padding: 50px;
+  align-content: center;
+}
+.media-content h1 {
+  font-size: 40px;
+}
+.gallery {
+  padding-left: 50px;
+}
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 250px;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+.media-video-content {
+  padding: 50px;
+}
+.media-video-content h1 {
+  font-size: 40px;
+}
+.video-content {
+  padding-left: 50px;
+}
+
+.nav-area {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index:1;
+}
+
+.nav-area .hamburger-menu {
+  position:absolute;
+  top: 45px;
+  right: 48vw;
+  z-index:  2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+
+}
+.nav-area .nav-icon {
+  position: absolute;
+  top: 45px;
+  right: 48vw;
+  z-index:1;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  background: rgba(255,255,255,0.6);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.nav-area .nav-icon > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.nav-area .nav-icon > div:before, .nav-area .nav-icon > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+.nav-area .nav-icon > div:after {
+  top: 8px;
+}
+.nav-area .hamburger-menu:checked + .nav-icon > div {
+  transform: rotate(135deg);
+}
+.nav-area .hamburger-menu:checked + .nav-icon > div:before,
+.nav-area .hamburger-menu:checked + .nav-icon > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.nav-area .hamburger-menu:checked:hover + .nav-icon > div {
+  transform: rotate(225deg);
+}
+.nav-area .hamburger-menu:checked ~ .main-menu {
+  visibility: visible;
+}
+.nav-area .hamburger-menu:checked ~ .main-menu > div {
+  transform: scale(1);
+  transition-duration: 0.8s;
+}
+.nav-area .hamburger-menu:checked ~ .main-menu > div > div {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.nav-area .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+.nav-area .main-menu > div {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.5s ease;
+  background: rgba(0,0,0,0.9);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vh;
+}
+.nav-area .main-menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.nav-area .main-menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+}
+.nav-area .main-menu > div > div > ul > li > a{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
