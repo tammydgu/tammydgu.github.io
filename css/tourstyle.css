@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: NexaRegular;
+  src: url("Fonts/Nexa Regular.otf")
+}
+@font-face {
+  font-family: NexaLight;
+  src: url("Fonts/Nexa Light.otf")
+}
 .load {
   animation: slide 2s;
 }
