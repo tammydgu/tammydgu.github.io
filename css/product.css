@@ -16,7 +16,7 @@ html, body {
   height: 75vh;
   width: 100%;
   margin: auto;
-  background: url("Images/macayres6.jpg") no-repeat 50% 50%;
+  background: url("Images/macayres9.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 .image-overlay a {
@@ -32,67 +32,6 @@ html, body {
 }
 .right {
   float: right;
-}
-.section-body {
-  height: 70vh;
-  width: 100%;
-  margin: auto;
-}
-.about-content {
-  padding: 50px;
-}
-.about-content img {
-  width: 30%;
-  height: 30%;
-  padding-right: 30px;
-  padding-bottom: 30px;
-}
-.about-content h1 {
-  padding-bottom: 30px;
-  font-size: 40px;
-}
-.about-content p {
-  font-size: 18px;
-  padding-bottom: 15px;
-  line-height: 1.3em;
-}
-
-.grid-container {
-  display: grid;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top: 100px;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-}
-
-.collab-section {
-  float: left;
-  width: 100%;
-}
-.collab-section ul {
-  font-size: 18px;
-  padding: 20px;
-  line-height: 1.75em;
-  width: 100%;
-}
-.collab-section h2 {
-  font-size: 40px;
-}
-.concert-section {
-  float:right;
-  width: 100%;
-}
-.concert-section ul {
-  font-size: 18px;
-  padding: 20px;
-  line-height: 1.75em;
-}
-.concert-section h2 {
-  font-size: 40px;
 }
 * {
   margin: 0px;
@@ -216,8 +155,50 @@ html, body {
   text-decoration: none;
   transition: color 0.5s ease;
 }
+.product-body {
+  width: 100%;
+  height: 30vh;
+}
+.grid-container {
+  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+.item1 {
+  float: left;
+  width: 300px;
+  height: 300px;
+}
+.item1 img {
+  width: 300px;
+  height: 300px;
+}
+.grid-container h1 {
+  padding-bottom: 30px;
+}
+.grid-container p {
+  padding-bottom: 40px;
+  padding-right: 50px;
+}
+.button button {
+  padding: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+.button {
+  padding-top: 30px;
+}
 .footer {
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

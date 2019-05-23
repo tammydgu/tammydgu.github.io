@@ -34,7 +34,7 @@ html, body {
   float: right;
 }
 .merch-body {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   margin: auto;
 }
@@ -196,4 +196,23 @@ html, body {
   color: inherit;
   text-decoration: none;
   transition: color 0.5s ease;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  padding: 20px;
+}
+.footer-content a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }

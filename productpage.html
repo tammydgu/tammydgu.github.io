@@ -2,12 +2,12 @@
 <html>
 
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/merchstyle.css">
-<script src="js/merchscript.js" async></script>
-
-<title>Mac Ayres | Merchandise</title>
+<!--This is where CSS code lives.-->
+<link rel="stylesheet" type="text/css" href="css/product.css">
+<script src="js/productscript.js" async></script>
+<title>Mac Ayres | Product</title>
 </head>
 
 <body>
@@ -37,21 +37,21 @@
     <span class="right"><a href="merch.html" style="font-family:NexaLight;">MERCHANDISE</a></span>
   </div>
   </div>
-  <div class="merch-body">
-    <h1 style="font-family:NexaLight;">MERCHANDISE</h1>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')" style="font-family:NexaLight;">SHOW ALL</button>
-      <button class="btn" onclick="filterSelection('shirts')" style="font-family:NexaLight;">SHIRTS</button>
-      <button class="btn" onclick="filterSelection('sweaters')" style="font-family:NexaLight;">SWEATERS</button>
-      <button class="btn" onclick="filterSelection('accessories')" style="font-family:NexaLight;">ACCESSORIES</button>
-    </div>
-    <div class="container">
-      <div class="filterDiv shirts"><a href="productpage.html"><img src="css/Images/macayrestshirt.jpg" style="width:250px;height:250px;"></a></div>
-      <div class="filterDiv sweaters"><img src="css/Images/macayreshoodie.jpg" style="width:250px;height:250px;filter:grayscale(100%);"></div>
-      <div class="filterDiv sweaters"><img src="css/Images/macayreshoodie2.jpg" style="width:250px;height:250px;filter:grayscale(100%);"></div>
-      <div class="filterDiv shirts"><img src="css/Images/macayreslongsleeve.jpg" style="width:250px;height:250px;filter:grayscale(100%);"></div>
-      <div class="filterDiv accessories"><img src="css/Images/macayreshat.jpg" style="width:250px;height:250px;filter:grayscale(100%);"></div>
-      <div class="filterDiv accessories"><img src="css/Images/macayresposter.jpg" style="width:250px;height:250px;filter:grayscale(100%);"></div>
+
+  <div class="product-body">
+    <div class="grid-container">
+      <div class="item1">
+          <img src="css/Images/macayrestshirt.jpg">
+      </div>
+      <span>
+        <h1 style="font-family:NexaLight;"> Mac Ayres "Something to Feel" T-Shirt</h1>
+        <p style="font-family:NexaLight;">Limited Edition Mac Ayres T-Shirt with album art from "Something to Feel".</p>
+        <p style="font-family:NexaLight; float:left;">QTY x1</p>
+        <p style="font-family:NexaRegular;">$29.99</p>
+        <div class="button">
+          <button type="button" style="font-family:NexaLight;">ADD TO CART</button>
+        </div>
+      </span>
     </div>
   </div>
 
@@ -67,7 +67,4 @@
 
   </div>
 
-
-
-
-</html>
+</body>
