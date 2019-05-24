@@ -5,6 +5,8 @@
   min-width: 100%;
   min-height: 100%;
 }
+
+
 .video-overlay {
   position: absolute;
   top: 200px;
@@ -62,6 +64,11 @@
   top:0;
   right:0;
   z-index:1;
+}
+
+h1 {
+  font-family: NexaLight;
+
 }
 
 .nav-area .hamburger-menu {
